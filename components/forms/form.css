@@ -58,8 +58,13 @@ body {
 	font-family: "Roboto", "Open Sans", sans-serif;
 }
 header {
-	height: 100px;
-	background-color: #FFFACD;
+	height: 5em;
+	background-color: #090707;
+	padding: 0.625em;
+}
+header a {
+	text-decoration: none;
+	color: #FAFAFA;
 }
 /** LOGIN FORM */
 .login {
@@ -310,7 +315,7 @@ header {
 	-moz-transition-duration: 0.3s;
 }
 .search-form input[type="submit"]:hover, .search-form input[type="submit"]:focus {
-	background-color: #FFFACD;
+	background-color: #EFDC05;
 	color: #000000;
 	border: none;
 	transition-duration: 0.3s;
