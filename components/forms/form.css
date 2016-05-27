@@ -11,6 +11,7 @@ input[type="email"],
 input[type="month"],
 input[type="number"],
 input[type="password"],
+input[type="radio"],
 input[type="search"],
 input[type="submit"],
 input[type="tel"],
@@ -326,3 +327,96 @@ header a {
 	outline: none;
 }
 /** End search */
+
+/** Questionnaire */
+.questionnaire {
+	width: 50%;
+	margin: 2.5em auto;
+}
+
+.question {
+	width: 100%;
+	margin: 5% auto;
+	padding: 2.5em;
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	border-left: 5px solid #00BFFF;
+	color: #666666;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+}
+.options label {
+	display: block;
+	width: 100%;
+	padding: 0.625em 0;
+}
+.options label input[type="radio"] {
+	margin-right: 15px;
+	border: 2px solid #AFE9FF;
+	background-color: #fff;
+	width: 1.25em;
+    height: 1.25em;
+    border-radius: 50% 50%;
+    transition-duration: 0.3s;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+}
+.options label input[type="radio"]:hover,
+.options label input[type="radio"]:focus {
+	margin-right: 15px;
+	border: 2px solid #AFE9FF;
+	background-color: #00BFFF;
+	width: 1.25em;
+    height: 1.25em;
+    border-radius: 50% 50%;
+    transition-duration: 0.3s;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+}
+.questionnaire-form input[type="text"] {
+	width: 40%;
+	height: 2.5em;
+	padding: 0.3125em;
+	margin-top: 0.3125em;
+	margin-bottom: 0.9375em;
+	font-size: 1em;
+	color: rgba(0,0,0,0.6);
+	border: 1px solid #AFE9FF;
+	border-radius: 3px;
+}
+.questionnaire-form button {
+	float: right;
+	min-width: 6.25em;
+	height: 2.5em;
+	font-size: 1.2em;
+	cursor: pointer;
+	background-color: #00BFFF;
+	color: #FFFFFF;
+	border-radius: 5px;
+	border: 1px solid #FFFFFF;
+	box-shadow: 2px 2px 5px #AFE9FF;
+	transition-duration: 0.3s;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+}
+.questionnaire-form button:hover, .login-form button:focus {
+	background-color: rgba(0,191,255,0.6);
+	box-shadow: none;
+	border: none;
+	transition-duration: 0.3s;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+}
+.questionnaire-form button:active {
+	box-shadow: 2px 2px 5px #AFE9FF;
+	border: 1px solid #FFFFFF;
+	transition-duration: 0.3s;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+	outline: none;
+}
+.questionnaire-form button:focus {
+	outline: none;
+}
+.question-title {
+	padding-bottom: 1.5em;
+}
