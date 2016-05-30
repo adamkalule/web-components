@@ -546,6 +546,17 @@ header a {
 .billing span a {
 	color: #666666;
 }
+.billing-header {
+	padding-bottom: 0.75em;
+	margin-bottom: 1.625em;
+	border-bottom: 1px dotted #e0e0e0;
+}
+.billing-header:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
 .billing-form:after {
 	content: "";
 	display: block;
