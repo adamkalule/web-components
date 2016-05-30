@@ -68,9 +68,20 @@ header a {
 	text-decoration: none;
 	color: #FAFAFA;
 }
+.row {
+	width: 100%;
+}
+.row:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.col4 {
+	width: 33.33333%;
+	float: left;
+}
 .col6 {
 	width: 50%;
-	display: inline-block;
 	float: left;
 }
 .col12 {
@@ -129,8 +140,7 @@ header a {
 }
 .login-form input[type="email"],
 .login-form input[type="password"],
-.login-form input[type="text"],
-.login-form input[type="date"] {
+.login-form input[type="text"] {
 	width: 100%;
 	height: 2.5em;
 	padding: 0.3125em;
@@ -140,6 +150,10 @@ header a {
 	color: rgba(0,0,0,0.6);
 	border: 1px solid #AFE9FF;
 	border-radius: 3px;
+}
+.login-form input[type="email"]:focus,
+.login-form input[type="password"]:focus {
+	border: 3px solid #AFE9FF;
 }
 .login-form button {
 	height: 3.6em;
@@ -240,6 +254,12 @@ header a {
 	color: rgba(0,0,0,0.6);
 	border: 1px solid #AFE9FF;
 	border-radius: 3px;
+}
+.signup-form input[type="email"]:focus,
+.signup-form input[type="text"]:focus,
+.signup-form input[type="password"]:focus,
+.signup-form input[type="date"]:focus {
+	border: 3px solid #AFE9FF;
 }
 .signup-form button {
 	height: 3.6em;
@@ -403,6 +423,9 @@ header a {
 	color: rgba(0,0,0,0.6);
 	border: 1px solid #AFE9FF;
 	border-radius: 3px;
+}
+.questionnaire-form input[type="text"]:focus {
+	border: 3px solid #AFE9FF;
 }
 .questionnaire-form button {
 	float: right;
@@ -605,6 +628,10 @@ header a {
 	border: 1px solid #AFE9FF;
 	border-radius: 3px;
 }
+.billing-form input[type="text"]:focus {
+	border: 3px solid #AFE9FF;
+	border-radius: 3px;
+}
 .billing-form input[type="checkbox"] {
 	display: inline-block;
     width: 30px;
@@ -645,3 +672,129 @@ header a {
 .billing-form button:focus {
 	outline: none;
 }
+
+/** APPOINTMENT SCHEDULE FORM */
+.appointment-container {
+	width: 60%;
+	margin: 5% auto;
+}
+.appointment {
+	width: 100%;
+	padding: 2.5em;
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	border-top: 5px solid #00BFFF;
+	color: #666666;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+}
+.appointment h1 {
+	display: inline-block;
+}
+.appointment span {
+	float: right;
+	font-size: 0.75em;
+}
+.appointment-form span {
+	margin-bottom: 0.25em;
+	font-style: italic;
+}
+.appointment span a {
+	color: #666666;
+}
+.appointment-header {
+	padding: 1.5%;
+	margin-bottom: 0.75em;
+	border-bottom: 1px dotted #e0e0e0;
+}
+.appointment-header:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.appointment-header span {
+	padding-top: 20px;
+}
+.appointment-form:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.appointment-form .col6,
+.appointment-form .col4,
+.appointment-form .col12 {
+	padding: 1.5%;
+}
+.appointment-form input,
+.appointment-form button {
+	display: block;
+	width: 100%;
+}
+.appointment-form label {
+	display: inline-block;
+}
+.appointment-form label:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.appointment-form input[type="email"],
+.appointment-form input[type="text"],
+.appointment-form input[type="date"],
+.appointment-form input[type="time"],
+.appointment-form select,
+.appointment-form textarea {
+	width: 100%;
+	height: 2.5em;
+	padding: 0.3125em;
+	margin-top: 0.3125em;
+	margin-bottom: 0.9375em;
+	font-size: 1.25em;
+	color: rgba(0,0,0,0.6);
+	border: 1px solid #AFE9FF;
+	border-radius: 3px;
+}
+.appointment-form input[type="email"]:focus,
+.appointment-form input[type="text"]:focus,
+.appointment-form input[type="date"]:focus,
+.appointment-form input[type="time"]:focus,
+.appointment-form select:focus,
+.appointment-form textarea:focus {
+	border: 3px solid #AFE9FF;
+}
+.appointment-form textarea {
+	height: 10em;
+}
+.appointment-form button {
+	height: 3em;
+	font-size: 1.2em;
+	line-height: 1.2em;
+	cursor: pointer;
+	background-color: #00BFFF;
+	color: #FFFFFF;
+	border-radius: 5px;
+	border: 1px solid #FFFFFF;
+	box-shadow: 2px 2px 5px #AFE9FF;
+	transition-duration: 0.3s;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+}
+.appointment-form button:hover, .appointment-form button:focus {
+	background-color: rgba(0,191,255,0.6);
+	box-shadow: none;
+	border: none;
+	transition-duration: 0.3s;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+}
+.appointment-form button:active {
+	box-shadow: 2px 2px 5px #AFE9FF;
+	border: 1px solid #FFFFFF;
+	transition-duration: 0.3s;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+	outline: none;
+}
+.appointment-form button:focus {
+	outline: none;
+}
+/** End Sign Up Form */
