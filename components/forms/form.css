@@ -68,6 +68,17 @@ header a {
 	text-decoration: none;
 	color: #FAFAFA;
 }
+.col6 {
+	width: 50%;
+	display: inline-block;
+	float: left;
+}
+.col12 {
+	width: 100%;
+}
+.right {
+	float: right;
+}
 /** LOGIN FORM */
 .login {
 	width: 30%;
@@ -509,4 +520,117 @@ header a {
 	border: 1px solid white;
 	border-radius: 5px;
 	margin-top: -15px;
+}
+
+/** Billing Form */
+.billing-container {
+	width: 60%;
+	margin: 5% auto;
+}
+.billing {
+	width: 100%;
+	padding: 2.5em;
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	border-top: 5px solid #00BFFF;
+	color: #666666;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+}
+.billing h1 {
+	display: inline-block;
+}
+.billing span {
+	float: right;
+	font-size: 0.75em;
+}
+.billing span a {
+	color: #666666;
+}
+.billing-form:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.billing-form .col6,
+.billing-form .col12 {
+	padding: 1.5%;
+}
+
+.billing-form span {
+	margin-bottom: 0.25em;
+	font-style: italic;
+}
+.billing-form fieldset {
+	border: 2px dotted #e0e0e0;
+	padding: 4% 3%;
+	margin-bottom: 5%;
+}
+.billing-form fieldset:last-child {
+	border: none;
+	padding: 0 3%;
+}
+.billing-form fieldset legend {
+	padding: 0 1.5%;
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+.billing-form input,
+.billing-form button {
+	display: block;
+	width: 100%;
+}
+.billing-form label {
+	cursor: pointer;
+}
+.billing-form input[type="text"] {
+	width: 100%;
+	height: 2.5em;
+	padding: 0.3125em;
+	margin-top: 0.3125em;
+	margin-bottom: 0.75em;
+	font-size: 1.25em;
+	color: rgba(0,0,0,0.6);
+	border: 1px solid #AFE9FF;
+	border-radius: 3px;
+}
+.billing-form input[type="checkbox"] {
+	display: inline-block;
+    width: 30px;
+    height: 25px;
+    border-radius: 10px;
+    border: 1px solid #AFE9FF;
+    cursor: pointer;
+}
+.billing-form button {
+	height: 3.6em;
+	font-size: 1.2em;
+	cursor: pointer;
+	background-color: #00BFFF;
+	color: #FFFFFF;
+	border-radius: 5px;
+	border: 1px solid #FFFFFF;
+	box-shadow: 2px 2px 5px #AFE9FF;
+	transition-duration: 0.3s;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+}
+.billing-form button:hover, .billing-form button:focus {
+	background-color: rgba(0,191,255,0.6);
+	box-shadow: none;
+	border: none;
+	transition-duration: 0.3s;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+}
+.billing-form button:active {
+	box-shadow: 2px 2px 5px #AFE9FF;
+	border: 1px solid #FFFFFF;
+	transition-duration: 0.3s;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+	outline: none;
+}
+.billing-form button:focus {
+	outline: none;
 }
